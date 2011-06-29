@@ -15,13 +15,14 @@
     
     self = [super initWithFrame:frame];
     if (self) {
-        
+
     }
     return self;
 }
 
 -(void)dealloc {
 	CGPathRelease(fingerDraw);
+	[bullshitMapImage release];
 	[super dealloc];
 }
 
@@ -43,7 +44,12 @@
 - (void)drawRect:(CGRect)rect {
 	if (!fingerDraw) {
 		fingerDraw = CGPathCreateMutable();
-	}
+		bullshitMapImage = [UIImage imageNamed:@"main_screen.png"];
+	}	
+	//Draw background font
+	CGPoint imagePoint = CGPointMake(0, 0);
+	[bullshitMapImage drawAtPoint:imagePoint];
+	
     CGContextRef context = UIGraphicsGetCurrentContext();
 	CGContextSetLineWidth(context, 2.0);
 	CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);

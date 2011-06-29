@@ -13,6 +13,7 @@
 	CGPoint startPoint;
 	CGPoint endPoint;
 	CGMutablePathRef fingerDraw;
+	UIImage* bullshitMapImage;
 }
 
 @end
