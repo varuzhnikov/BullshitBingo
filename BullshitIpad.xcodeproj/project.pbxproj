@@ -16,9 +16,9 @@
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* BullshitIpadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* BullshitIpadViewController.m */; };
 		8C85A8F113607F9F00C59F9C /* BullshitMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C85A8F013607F9F00C59F9C /* BullshitMap.m */; };
-		8C8C938A13BA48810011DF38 /* about_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C8C938913BA48810011DF38 /* about_screen.png */; };
-		8C8C938C13BA488B0011DF38 /* main_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C8C938B13BA488B0011DF38 /* main_screen.png */; };
-		8C8C938E13BA488F0011DF38 /* bullshit_splash_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C8C938D13BA488F0011DF38 /* bullshit_splash_screen.png */; };
+		8C88007213BE51DD00D9491B /* about_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C88006F13BE51DD00D9491B /* about_screen.png */; };
+		8C88007313BE51DD00D9491B /* bullshit_splash_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C88007013BE51DD00D9491B /* bullshit_splash_screen.png */; };
+		8C88007413BE51DD00D9491B /* main_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C88007113BE51DD00D9491B /* main_screen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,9 +36,9 @@
 		32CA4F630368D1EE00C91783 /* BullshitIpad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BullshitIpad_Prefix.pch; sourceTree = "<group>"; };
 		8C85A8EF13607F9F00C59F9C /* BullshitMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BullshitMap.h; sourceTree = "<group>"; };
 		8C85A8F013607F9F00C59F9C /* BullshitMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BullshitMap.m; sourceTree = "<group>"; };
-		8C8C938913BA48810011DF38 /* about_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = about_screen.png; path = "/Volumes/VMware Shared Folders/vboxshare/ipad/about_screen.png"; sourceTree = "<absolute>"; };
-		8C8C938B13BA488B0011DF38 /* main_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_screen.png; path = "/Volumes/VMware Shared Folders/vboxshare/ipad/main_screen.png"; sourceTree = "<absolute>"; };
-		8C8C938D13BA488F0011DF38 /* bullshit_splash_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bullshit_splash_screen.png; path = "/Volumes/VMware Shared Folders/vboxshare/ipad/bullshit_splash_screen.png"; sourceTree = "<absolute>"; };
+		8C88006F13BE51DD00D9491B /* about_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_screen.png; sourceTree = "<group>"; };
+		8C88007013BE51DD00D9491B /* bullshit_splash_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullshit_splash_screen.png; sourceTree = "<group>"; };
+		8C88007113BE51DD00D9491B /* main_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_screen.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* BullshitIpad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BullshitIpad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,9 +122,9 @@
 		8C8C938713BA485B0011DF38 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				8C8C938D13BA488F0011DF38 /* bullshit_splash_screen.png */,
-				8C8C938B13BA488B0011DF38 /* main_screen.png */,
-				8C8C938913BA48810011DF38 /* about_screen.png */,
+				8C88006F13BE51DD00D9491B /* about_screen.png */,
+				8C88007013BE51DD00D9491B /* bullshit_splash_screen.png */,
+				8C88007113BE51DD00D9491B /* main_screen.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -180,9 +180,9 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* BullshitIpadViewController.xib in Resources */,
-				8C8C938A13BA48810011DF38 /* about_screen.png in Resources */,
-				8C8C938C13BA488B0011DF38 /* main_screen.png in Resources */,
-				8C8C938E13BA488F0011DF38 /* bullshit_splash_screen.png in Resources */,
+				8C88007213BE51DD00D9491B /* about_screen.png in Resources */,
+				8C88007313BE51DD00D9491B /* bullshit_splash_screen.png in Resources */,
+				8C88007413BE51DD00D9491B /* main_screen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
