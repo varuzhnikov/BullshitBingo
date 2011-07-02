@@ -7,14 +7,13 @@
 //
 
 #import "BullshitMapTest.h"
-#import "BullshitMap.h"
 
 @implementation BullshitMapTest
 
 -(void) testCreateBullshitMap {
 	BullshitMap *bullshitMap = [[BullshitMap alloc] init];
-	Cell cell = {4,4};
-	STAssertFalse([bullshitMap isExpunged:cell], @"should't be expunged");
+	Cell someCell = {0,4};
+	STAssertFalse([bullshitMap isExpunged:someCell], @"should't be expunged");
 	[bullshitMap release];
 }
 
@@ -26,14 +25,112 @@
 	[bullshitMap release];
 }
 
-//- (void) STAssertBullshitMapNew: (BullshitMap *) bullshitMap  {
-//	for (int i = 0; i < 5; i++) {
-//		for (int j = 0; j < 5; j++) {
-//			Cell cell = {i,j};
-//			STAssertFalse([bullshitMap isExpunged:cell], 
-//						  [NSString stringWithFormat:@"cell [%d, %d] should't be expunged", i, j]);
-//		}
-//	}
-//}
+/**
+	Tests that map
+     0 1 2 3 4
+	-----------
+	|1|1|1|1|1|0
+	-----------
+	|0|0|0|0|0|1
+	-----------
+	|0|0|0|0|0|2
+	-----------
+	|0|0|0|0|0|3
+	-----------
+	|0|0|0|0|0|4
+	-----------
+ */
+-(void) testFirstRowBullshit {
+	BullshitMap *bullshitMap = [[BullshitMap alloc] init];
+	for (int j = 0; j < MAP_SIZE; j++) {
+		Cell cell = {0, j};
+		[bullshitMap expunge:cell];	
+	}
+	STAssertTrue([bullshitMap isBullshit], @"Should be bullshit");
+	[bullshitMap release];
+}
+
+/**
+ Tests that map
+  0 1 2 3 4
+ -----------
+ |1|1|1|1|0|0
+ -----------
+ |0|0|0|0|0|1
+ -----------
+ |0|0|0|0|0|2
+ -----------
+ |0|0|0|0|0|3
+ -----------
+ |0|0|0|0|0|4
+ -----------
+ */
+-(void) testFirstRowIsNotBullshit {
+	BullshitMap *bullshitMap = [[BullshitMap alloc] init];
+	for (int j = 0; j < 4; j++) {
+		Cell cell = {0, j};
+		[bullshitMap expunge:cell];	
+	}
+	STAssertFalse([bullshitMap isBullshit], @"Should't be bullshit");
+	[bullshitMap release];
+}
+
+/**
+ Tests that map
+  0 1 2 3 4
+ -----------
+ |1|1|1|1|0|0
+ -----------
+ |0|0|0|1|0|1
+ -----------
+ |0|0|0|1|0|2
+ -----------
+ |0|0|0|1|0|3
+ -----------
+ |0|0|0|1|0|4
+ -----------
+ */
+-(void) testFourthColumnIsBullshit {
+	BullshitMap *bullshitMap = [[BullshitMap alloc] init];
+	for (int j = 0; j < MAP_SIZE - 1; j++) {
+		Cell cell = {0, j};
+		[bullshitMap expunge:cell];	
+	}
+	for (int j = 0; j < MAP_SIZE; j++) {
+		Cell cell = {j, 4};
+		[bullshitMap expunge:cell];	
+	}
+	STAssertTrue([bullshitMap isBullshit], @"Should be bullshit");
+	[bullshitMap release];
+}
+
+/*
+ Tests that map
+ 0 1 2 3 4
+-----------
+|1|1|1|1|0|0
+-----------
+|0|0|0|1|0|1
+-----------
+|0|0|0|1|0|2
+-----------
+|0|0|0|1|0|3
+-----------
+|0|0|0|0|0|4
+-----------
+*/
+-(void) testFourthColumnIsNotBullshit {
+	BullshitMap *bullshitMap = [[BullshitMap alloc] init];
+	for (int j = 0; j < MAP_SIZE - 1; j++) {
+		Cell cell = {0, j};
+		[bullshitMap expunge:cell];	
+	}
+	for (int j = 0; j < MAP_SIZE - 1; j++) {
+		Cell cell = {j, 3};
+		[bullshitMap expunge:cell];	
+	}
+	STAssertFalse([bullshitMap isBullshit], @"Should't be bullshit");
+	[bullshitMap release];
+}
 
 @end

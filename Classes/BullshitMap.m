@@ -40,12 +40,46 @@ int const MAP_SIZE = 5;
 }
 
 - (bool)isExpunged:(Cell)cell {	
-	bool a= cells[cell.i][cell.j];
-	return a;
+	return cells[cell.i][cell.j];
 }
 
 - (void)expunge:(Cell)cell {
 	cells[cell.i][cell.j] = YES;
+}
+
+- (bool)isBullshit {
+	// For all rows
+	for (int i = 0; i < MAP_SIZE; i++) {
+		// Let bullshit is true
+		bool rowBullshit = YES;
+		for (int j = 0; j < MAP_SIZE; j++) {
+			Cell cell = {i, j};
+			// if one of cell of row is not expunged than theris no bullshit in this row
+			if (![self isExpunged:cell]) {
+				rowBullshit = NO;
+			}
+		}
+		if (rowBullshit) {
+			return YES; 
+		}
+	}
+	
+	// For all columns
+	for (int j = 0; j < MAP_SIZE; j++) {
+		// Let bullshit is true
+		bool columnBullshit = YES;
+		for (int i = 0; i < MAP_SIZE; i++) {
+			Cell cell = {i,j};
+			// if one of cell of column is not expunged than there is no bullshit in this column
+			if (![self isExpunged:cell]) {
+				columnBullshit = NO;
+			}
+		}
+		if (columnBullshit) {
+			return YES;
+		}
+	}
+	return NO;
 }
 
 @end

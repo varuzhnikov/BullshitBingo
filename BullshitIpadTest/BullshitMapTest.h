@@ -14,14 +14,17 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 #import <UIKit/UIKit.h>
+#import "BullshitMap.h"
 //#import "application_headers" as required
 
 
 @interface BullshitMapTest : SenTestCase {
-
 }
+
 
 -(void) testExpungeCell;
 -(void) testCreateBullshitMap;
+-(void) testFirstRowBullshit;
+
 
 @end

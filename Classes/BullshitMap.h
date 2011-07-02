@@ -21,5 +21,6 @@ typedef struct {
 
 - (bool)isExpunged:(Cell)cell;
 - (void)expunge:(Cell)cell;
+- (bool)isBullshit;
 
 @end
