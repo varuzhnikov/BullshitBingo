@@ -10,6 +10,15 @@
 
 @implementation BullshitIpadViewController
 
+@synthesize aboutView;
+@synthesize bullshitView;
+
+- (void)dealloc {
+    self.aboutView = nil;
+    self.bullshitView = nil;
+    
+    [super dealloc];    
+}
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
@@ -28,6 +37,15 @@
 }
 */
 
+- (IBAction)aboutAction {
+    NSLog(@"called aboutAction");
+    self.view = self.aboutView;
+}
+
+- (IBAction)showBullshitMap {
+    NSLog(@"called showBullshitMap");
+    self.view = self.bullshitView;
+}
 
 /*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -39,7 +57,7 @@
 
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    return YES;
+    return NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,9 +72,26 @@
 	// e.g. self.myOutlet = nil;
 }
 
+#pragma mark PointHandlerDelegate
 
-- (void)dealloc {
-    [super dealloc];
+- (void)handleLineWithStartPoint:(CGPoint)startPoint andEndPoint:(CGPoint)endPoint {
+    NSLog(@"Received info about line %f,%f -> %f,%f", startPoint.x, startPoint.y, endPoint.x, endPoint.y);
+
+    CGFloat centerX = 768 / 2;
+    CGFloat centerY = 1004 / 2;
+    
+    CGFloat distanceFromCenterAndStartPoint = sqrt((startPoint.x - centerX)*(startPoint.x - centerX) + (startPoint.y - centerY)*(startPoint.y - centerY));
+    
+    
+    NSLog(@"distance = %f", distanceFromCenterAndStartPoint);
+    if (distanceFromCenterAndStartPoint < 100) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"BINGO" message:@"Bingo obtained!" delegate:nil cancelButtonTitle:@"Shit!" otherButtonTitles:nil];
+        
+        [alert show];
+        [alert release];
+        
+    }
 }
+
 
 @end
