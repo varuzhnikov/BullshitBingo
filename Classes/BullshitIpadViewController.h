@@ -12,5 +12,12 @@
 
 }
 
+@property (retain, nonatomic) IBOutlet UIView *aboutView;
+@property (retain, nonatomic) IBOutlet UIView *bullshitView;
+
+- (IBAction)aboutAction;
+- (IBAction)showBullshitMap;
+
+
 @end
 

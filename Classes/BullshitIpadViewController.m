@@ -10,6 +10,15 @@
 
 @implementation BullshitIpadViewController
 
+@synthesize aboutView;
+@synthesize bullshitView;
+
+- (void)dealloc {
+    self.aboutView = nil;
+    self.bullshitView = nil;
+    
+    [super dealloc];    
+}
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
@@ -28,30 +37,21 @@
 }
 */
 
-- (void)aboutAction {
+- (IBAction)aboutAction {
     NSLog(@"called aboutAction");
+    self.view = self.aboutView;
 }
 
+- (IBAction)showBullshitMap {
+    NSLog(@"called showBullshitMap");
+    self.view = self.bullshitView;
+}
 
+/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-    UIButton *button1 = [UIButton buttonWithType:UIButtonTypeCustom];
-
-    CGFloat x = 140;
-    CGFloat y = 900;
-    CGFloat width = 150;
-    CGFloat height = 40;
-    button1.frame = CGRectMake(x, y, width, height);
-        
-    [button1 addTarget:self action:@selector(aboutAction) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self.view addSubview:button1];
-    
-    self.view.backgroundColor = [UIColor redColor];
-    
     [super viewDidLoad];
 }
-/*
 */
 
 
@@ -72,9 +72,5 @@
 	// e.g. self.myOutlet = nil;
 }
 
-
-- (void)dealloc {
-    [super dealloc];
-}
 
 @end
