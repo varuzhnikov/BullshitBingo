@@ -11,14 +11,7 @@
 
 @implementation BullshitMap
 
-- (id)initWithFrame:(CGRect)frame {
-    
-    self = [super initWithFrame:frame];
-    if (self) {
-
-    }
-    return self;
-}
+@synthesize delegate;
 
 -(void)dealloc {
 	CGPathRelease(fingerDraw);
@@ -46,6 +39,7 @@
 	UITouch* touch = [touches anyObject];
 	endPoint = [touch locationInView:self];
 	[self setNeedsDisplay];
+    [delegate handleLineWithStartPoint:startPoint andEndPoint:endPoint];
 }
 
 

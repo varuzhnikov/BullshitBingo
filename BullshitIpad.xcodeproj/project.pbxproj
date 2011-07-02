@@ -34,6 +34,7 @@
 		28D7ACF70DDB3853001CB0EB /* BullshitIpadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BullshitIpadViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* BullshitIpad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BullshitIpad_Prefix.pch; sourceTree = "<group>"; };
+		401BE58713BEF864009A5C89 /* PointHandlerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointHandlerDelegate.h; sourceTree = "<group>"; };
 		8C85A8EF13607F9F00C59F9C /* BullshitMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BullshitMap.h; sourceTree = "<group>"; };
 		8C85A8F013607F9F00C59F9C /* BullshitMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BullshitMap.m; sourceTree = "<group>"; };
 		8C88006F13BE51DD00D9491B /* about_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_screen.png; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 				28D7ACF70DDB3853001CB0EB /* BullshitIpadViewController.m */,
 				8C85A8EF13607F9F00C59F9C /* BullshitMap.h */,
 				8C85A8F013607F9F00C59F9C /* BullshitMap.m */,
+				401BE58713BEF864009A5C89 /* PointHandlerDelegate.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";

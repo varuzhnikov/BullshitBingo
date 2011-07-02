@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "PointHandlerDelegate.h"
 
 @interface BullshitMap : UIView {
 	CGPoint startPoint;
@@ -15,5 +15,7 @@
 	CGMutablePathRef fingerDraw;
 	UIImage* bullshitMapImage;
 }
+
+@property (nonatomic, retain) IBOutlet id<PointHandlerDelegate> delegate;
 
 @end

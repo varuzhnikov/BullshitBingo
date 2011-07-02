@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PointHandlerDelegate.h"
 
-@interface BullshitIpadViewController : UIViewController {
+@interface BullshitIpadViewController : UIViewController <PointHandlerDelegate> {
 
 }
 
