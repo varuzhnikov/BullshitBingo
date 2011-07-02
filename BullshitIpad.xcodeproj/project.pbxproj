@@ -15,31 +15,14 @@
 		2899E5220DE3E06400AC0155 /* BullshitIpadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* BullshitIpadViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* BullshitIpadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* BullshitIpadViewController.m */; };
-		401BE58E13BEFC8B009A5C89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		401BE58F13BEFC8B009A5C89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		401BE59013BEFC8B009A5C89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		401BE59613BEFC8B009A5C89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 401BE59413BEFC8B009A5C89 /* InfoPlist.strings */; };
-		401BE59913BEFC8B009A5C89 /* BullshitIpadTest.h in Resources */ = {isa = PBXBuildFile; fileRef = 401BE59813BEFC8B009A5C89 /* BullshitIpadTest.h */; };
-		401BE59B13BEFC8B009A5C89 /* BullshitIpadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 401BE59A13BEFC8B009A5C89 /* BullshitIpadTest.m */; };
-		401BE5A913BEFDC4009A5C89 /* BullshitIpadAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* BullshitIpadAppDelegate.m */; };
-		401BE5AA13BEFDC4009A5C89 /* BullshitIpadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* BullshitIpadViewController.m */; };
-		401BE5AB13BEFDC4009A5C89 /* BullshitMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C85A8F013607F9F00C59F9C /* BullshitMap.m */; };
-		401BE5AC13BEFDC4009A5C89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
-		8C85A8F113607F9F00C59F9C /* BullshitMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C85A8F013607F9F00C59F9C /* BullshitMap.m */; };
+		8C85A8F113607F9F00C59F9C /* BullshitMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C85A8F013607F9F00C59F9C /* BullshitMapView.m */; };
 		8C88007213BE51DD00D9491B /* about_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C88006F13BE51DD00D9491B /* about_screen.png */; };
 		8C88007313BE51DD00D9491B /* bullshit_splash_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C88007013BE51DD00D9491B /* bullshit_splash_screen.png */; };
 		8C88007413BE51DD00D9491B /* main_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C88007113BE51DD00D9491B /* main_screen.png */; };
+		8C8A378013BF2F9B005AA287 /* BullshitMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A377F13BF2F9B005AA287 /* BullshitMap.m */; };
+		8C8A39CA13BF5CC1005AA287 /* BullshitMapTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A39C913BF5CC1005AA287 /* BullshitMapTest.m */; };
+		8C8A39E413BF5FB5005AA287 /* BullshitMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A377F13BF2F9B005AA287 /* BullshitMap.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		401BE59F13BEFD56009A5C89 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
-			remoteInfo = BullshitIpad;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,17 +38,21 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* BullshitIpad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BullshitIpad_Prefix.pch; sourceTree = "<group>"; };
 		401BE58713BEF864009A5C89 /* PointHandlerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointHandlerDelegate.h; sourceTree = "<group>"; };
-		401BE58D13BEFC8B009A5C89 /* BullshitIpadTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullshitIpadTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		401BE59313BEFC8B009A5C89 /* BullshitIpadTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BullshitIpadTest-Info.plist"; sourceTree = "<group>"; };
 		401BE59513BEFC8B009A5C89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		401BE59713BEFC8B009A5C89 /* BullshitIpadTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BullshitIpadTest-Prefix.pch"; sourceTree = "<group>"; };
-		401BE59813BEFC8B009A5C89 /* BullshitIpadTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BullshitIpadTest.h; sourceTree = "<group>"; };
-		401BE59A13BEFC8B009A5C89 /* BullshitIpadTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BullshitIpadTest.m; sourceTree = "<group>"; };
-		8C85A8EF13607F9F00C59F9C /* BullshitMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BullshitMap.h; sourceTree = "<group>"; };
-		8C85A8F013607F9F00C59F9C /* BullshitMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BullshitMap.m; sourceTree = "<group>"; };
+		8C85A8EF13607F9F00C59F9C /* BullshitMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BullshitMapView.h; sourceTree = "<group>"; };
+		8C85A8F013607F9F00C59F9C /* BullshitMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BullshitMapView.m; sourceTree = "<group>"; };
 		8C88006F13BE51DD00D9491B /* about_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_screen.png; sourceTree = "<group>"; };
 		8C88007013BE51DD00D9491B /* bullshit_splash_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullshit_splash_screen.png; sourceTree = "<group>"; };
 		8C88007113BE51DD00D9491B /* main_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_screen.png; sourceTree = "<group>"; };
+		8C8A377E13BF2F9B005AA287 /* BullshitMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BullshitMap.h; sourceTree = "<group>"; };
+		8C8A377F13BF2F9B005AA287 /* BullshitMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BullshitMap.m; sourceTree = "<group>"; };
+		8C8A37B713BF3707005AA287 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		8C8A39C013BF5BE4005AA287 /* LogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C8A39C113BF5BE4005AA287 /* LogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogicTests-Info.plist"; sourceTree = "<group>"; };
+		8C8A39C813BF5CC1005AA287 /* BullshitMapTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BullshitMapTest.h; sourceTree = "<group>"; };
+		8C8A39C913BF5CC1005AA287 /* BullshitMapTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BullshitMapTest.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* BullshitIpad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BullshitIpad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,13 +67,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		401BE58913BEFC8B009A5C89 /* Frameworks */ = {
+		8C8A39BD13BF5BE4005AA287 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				401BE58E13BEFC8B009A5C89 /* UIKit.framework in Frameworks */,
-				401BE58F13BEFC8B009A5C89 /* Foundation.framework in Frameworks */,
-				401BE59013BEFC8B009A5C89 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,9 +84,12 @@
 				1D3623250D0F684500981E51 /* BullshitIpadAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* BullshitIpadViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* BullshitIpadViewController.m */,
-				8C85A8EF13607F9F00C59F9C /* BullshitMap.h */,
-				8C85A8F013607F9F00C59F9C /* BullshitMap.m */,
+				8C85A8EF13607F9F00C59F9C /* BullshitMapView.h */,
+				8C85A8F013607F9F00C59F9C /* BullshitMapView.m */,
 				401BE58713BEF864009A5C89 /* PointHandlerDelegate.h */,
+				8C8A377E13BF2F9B005AA287 /* BullshitMap.h */,
+				8C8A377F13BF2F9B005AA287 /* BullshitMap.m */,
+				8C8A37B713BF3707005AA287 /* Cell.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -110,8 +97,8 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				8C8A39C013BF5BE4005AA287 /* LogicTests.octest */,
 				1D6058910D05DD3D006BFB54 /* BullshitIpad.app */,
-				401BE58D13BEFC8B009A5C89 /* BullshitIpadTest.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +112,7 @@
 				401BE59113BEFC8B009A5C89 /* BullshitIpadTest */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				8C8A39C113BF5BE4005AA287 /* LogicTests-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -162,9 +150,9 @@
 		401BE59113BEFC8B009A5C89 /* BullshitIpadTest */ = {
 			isa = PBXGroup;
 			children = (
-				401BE59813BEFC8B009A5C89 /* BullshitIpadTest.h */,
-				401BE59A13BEFC8B009A5C89 /* BullshitIpadTest.m */,
 				401BE59213BEFC8B009A5C89 /* Supporting Files */,
+				8C8A39C813BF5CC1005AA287 /* BullshitMapTest.h */,
+				8C8A39C913BF5CC1005AA287 /* BullshitMapTest.m */,
 			);
 			path = BullshitIpadTest;
 			sourceTree = "<group>";
@@ -209,23 +197,24 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* BullshitIpad.app */;
 			productType = "com.apple.product-type.application";
 		};
-		401BE58C13BEFC8B009A5C89 /* BullshitIpadTest */ = {
+		8C8A39BF13BF5BE4005AA287 /* LogicTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 401BE59C13BEFC8B009A5C89 /* Build configuration list for PBXNativeTarget "BullshitIpadTest" */;
+			buildConfigurationList = 8C8A39C413BF5BE6005AA287 /* Build configuration list for PBXNativeTarget "LogicTests" */;
 			buildPhases = (
-				401BE58813BEFC8B009A5C89 /* Sources */,
-				401BE58913BEFC8B009A5C89 /* Frameworks */,
-				401BE58A13BEFC8B009A5C89 /* Resources */,
-				401BE58B13BEFC8B009A5C89 /* ShellScript */,
+				8C8A39BB13BF5BE4005AA287 /* Resources */,
+				8C8A39BC13BF5BE4005AA287 /* Sources */,
+				8C8A39BD13BF5BE4005AA287 /* Frameworks */,
+				8C8A39BE13BF5BE4005AA287 /* ShellScript */,
+				8C8A3A1313BF6100005AA287 /* ShellScript */,
+				8C8A3A1F13BF6151005AA287 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				401BE5A013BEFD56009A5C89 /* PBXTargetDependency */,
 			);
-			name = BullshitIpadTest;
-			productName = BullshitIpadTest;
-			productReference = 401BE58D13BEFC8B009A5C89 /* BullshitIpadTest.octest */;
+			name = LogicTests;
+			productName = LogicTests;
+			productReference = 8C8A39C013BF5BE4005AA287 /* LogicTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -249,7 +238,7 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* BullshitIpad */,
-				401BE58C13BEFC8B009A5C89 /* BullshitIpadTest */,
+				8C8A39BF13BF5BE4005AA287 /* LogicTests */,
 			);
 		};
 /* End PBXProject section */
@@ -267,19 +256,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		401BE58A13BEFC8B009A5C89 /* Resources */ = {
+		8C8A39BB13BF5BE4005AA287 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				401BE59613BEFC8B009A5C89 /* InfoPlist.strings in Resources */,
-				401BE59913BEFC8B009A5C89 /* BullshitIpadTest.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		401BE58B13BEFC8B009A5C89 /* ShellScript */ = {
+		8C8A39BE13BF5BE4005AA287 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -292,6 +279,33 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		8C8A3A1313BF6100005AA287 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			comments = "\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\" 1> /dev/null";
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		8C8A3A1F13BF6151005AA287 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\" 1> /tmp/RunUnitTests.out";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -302,31 +316,21 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* BullshitIpadAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* BullshitIpadViewController.m in Sources */,
-				8C85A8F113607F9F00C59F9C /* BullshitMap.m in Sources */,
+				8C85A8F113607F9F00C59F9C /* BullshitMapView.m in Sources */,
+				8C8A378013BF2F9B005AA287 /* BullshitMap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		401BE58813BEFC8B009A5C89 /* Sources */ = {
+		8C8A39BC13BF5BE4005AA287 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				401BE5A913BEFDC4009A5C89 /* BullshitIpadAppDelegate.m in Sources */,
-				401BE5AA13BEFDC4009A5C89 /* BullshitIpadViewController.m in Sources */,
-				401BE5AB13BEFDC4009A5C89 /* BullshitMap.m in Sources */,
-				401BE5AC13BEFDC4009A5C89 /* main.m in Sources */,
-				401BE59B13BEFC8B009A5C89 /* BullshitIpadTest.m in Sources */,
+				8C8A39CA13BF5CC1005AA287 /* BullshitMapTest.m in Sources */,
+				8C8A39E413BF5FB5005AA287 /* BullshitMap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		401BE5A013BEFD56009A5C89 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1D6058900D05DD3D006BFB54 /* BullshitIpad */;
-			targetProxy = 401BE59F13BEFD56009A5C89 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		401BE59413BEFC8B009A5C89 /* InfoPlist.strings */ = {
@@ -367,54 +371,63 @@
 			};
 			name = Release;
 		};
-		401BE59D13BEFC8B009A5C89 /* Debug */ = {
+		8C8A39C213BF5BE6005AA287 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BullshitIpadTest/BullshitIpadTest-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				INFOPLIST_FILE = "BullshitIpadTest/BullshitIpadTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				INFOPLIST_FILE = "LogicTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
+					Foundation,
+					"-framework",
 					SenTestingKit,
+					"-framework",
+					UIKit,
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PREBINDING = NO;
+				PRODUCT_NAME = LogicTests;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
-		401BE59E13BEFC8B009A5C89 /* Release */ = {
+		8C8A39C313BF5BE6005AA287 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BullshitIpadTest/BullshitIpadTest-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				INFOPLIST_FILE = "BullshitIpadTest/BullshitIpadTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "LogicTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
+					Foundation,
+					"-framework",
 					SenTestingKit,
+					"-framework",
+					UIKit,
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PREBINDING = NO;
+				PRODUCT_NAME = LogicTests;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -459,13 +472,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		401BE59C13BEFC8B009A5C89 /* Build configuration list for PBXNativeTarget "BullshitIpadTest" */ = {
+		8C8A39C413BF5BE6005AA287 /* Build configuration list for PBXNativeTarget "LogicTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				401BE59D13BEFC8B009A5C89 /* Debug */,
-				401BE59E13BEFC8B009A5C89 /* Release */,
+				8C8A39C213BF5BE6005AA287 /* Debug */,
+				8C8A39C313BF5BE6005AA287 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BullshitIpad" */ = {
 			isa = XCConfigurationList;

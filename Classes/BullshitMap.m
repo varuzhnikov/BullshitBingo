@@ -2,67 +2,50 @@
 //  BullshitMap.m
 //  BullshitIpad
 //
-//  Created by svp on 21.04.11.
+//  Created by svp on 02.07.11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "BullshitMap.h" 
+#import "BullshitMap.h"
+
+int const MAP_SIZE = 5;
 
 
 @implementation BullshitMap
 
-@synthesize delegate;
+-(id)init {
+	self = [super init];
+	
+	if (self) {
+		cells = (bool**)malloc(MAP_SIZE * sizeof(bool));
+		for (int i = 0; i < MAP_SIZE; i++) {
+			cells[i] = (bool*)malloc(MAP_SIZE * sizeof(bool));
+		}
+		for (int i = 0; i < MAP_SIZE; i++) {
+			for (int j = 0; j < MAP_SIZE; j++) {
+				cells[i][j] = NO;
+			}
+		}
+	}
+	
+	return self;
+}
 
 -(void)dealloc {
-	CGPathRelease(fingerDraw);
-	[bullshitMapImage release];
+	for (int i = 0; i < MAP_SIZE; i++) {
+		free(cells[i]);
+	}
+	free(cells);
 	[super dealloc];
 }
 
-- (BOOL)isMultitouch:(NSSet *)touches {
-    return [touches count] > 1;
+- (bool)isExpunged:(Cell)cell {	
+	bool a= cells[cell.i][cell.j];
+	return a;
 }
 
-
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    if ([self isMultitouch:touches]) {
-        return;
-    }
-	UITouch* touch = [touches anyObject];
-	startPoint = [touch locationInView:self];
-}
-
--(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-    if ([self isMultitouch:touches]) {
-        return;
-    }
-	UITouch* touch = [touches anyObject];
-	endPoint = [touch locationInView:self];
-	[self setNeedsDisplay];
-    [delegate handleLineWithStartPoint:startPoint andEndPoint:endPoint];
-}
-
-
-
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-	if (!fingerDraw) {
-		fingerDraw = CGPathCreateMutable();
-		bullshitMapImage = [UIImage imageNamed:@"main_screen.png"];
-	}	
-	//Draw background font
-	CGPoint imagePoint = CGPointMake(0, 0);
-	[bullshitMapImage drawAtPoint:imagePoint];
-	
-    CGContextRef context = UIGraphicsGetCurrentContext();
-	CGContextSetLineWidth(context, 2.0);
-	CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
-	CGPathMoveToPoint(fingerDraw, NULL, startPoint.x, startPoint.y);
-	CGPathAddLineToPoint(fingerDraw, NULL, endPoint.x, endPoint.y);
-	CGContextAddPath(context, fingerDraw);
-	CGContextStrokePath(context);
-	startPoint = endPoint;
+- (void)expunge:(Cell)cell {
+	cells[cell.i][cell.j] = YES;
 }
 
 @end

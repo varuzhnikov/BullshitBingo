@@ -2,20 +2,24 @@
 //  BullshitMap.h
 //  BullshitIpad
 //
-//  Created by svp on 21.04.11.
+//  Created by svp on 02.07.11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "PointHandlerDelegate.h"
+#import <Foundation/Foundation.h>
 
-@interface BullshitMap : UIView {
-	CGPoint startPoint;
-	CGPoint endPoint;
-	CGMutablePathRef fingerDraw;
-	UIImage* bullshitMapImage;
+extern int const MAP_SIZE;
+
+typedef struct {
+	int i;
+	int j;
+} Cell;
+
+@interface BullshitMap : NSObject {
+	bool** cells;
 }
 
-@property (nonatomic, retain) IBOutlet id<PointHandlerDelegate> delegate;
+- (bool)isExpunged:(Cell)cell;
+- (void)expunge:(Cell)cell;
 
 @end
