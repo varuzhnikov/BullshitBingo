@@ -28,18 +28,36 @@
 }
 */
 
+- (void)aboutAction {
+    NSLog(@"called aboutAction");
+}
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+    UIButton *button1 = [UIButton buttonWithType:UIButtonTypeCustom];
+
+    CGFloat x = 140;
+    CGFloat y = 900;
+    CGFloat width = 150;
+    CGFloat height = 40;
+    button1.frame = CGRectMake(x, y, width, height);
+        
+    [button1 addTarget:self action:@selector(aboutAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:button1];
+    
+    self.view.backgroundColor = [UIColor redColor];
+    
     [super viewDidLoad];
 }
+/*
 */
 
 
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    return YES;
+    return NO;
 }
 
 - (void)didReceiveMemoryWarning {

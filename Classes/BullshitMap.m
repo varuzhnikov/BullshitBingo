@@ -69,6 +69,8 @@
 	CGContextAddPath(context, fingerDraw);
 	CGContextStrokePath(context);
 	startPoint = endPoint;
+
+    [super drawRect:rect];
 }
 
 @end
