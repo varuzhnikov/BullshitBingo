@@ -26,12 +26,23 @@
 	[super dealloc];
 }
 
+- (BOOL)isMultitouch:(NSSet *)touches {
+    return [touches count] > 1;
+}
+
+
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    if ([self isMultitouch:touches]) {
+        return;
+    }
 	UITouch* touch = [touches anyObject];
 	startPoint = [touch locationInView:self];
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    if ([self isMultitouch:touches]) {
+        return;
+    }
 	UITouch* touch = [touches anyObject];
 	endPoint = [touch locationInView:self];
 	[self setNeedsDisplay];
