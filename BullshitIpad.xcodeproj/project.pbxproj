@@ -15,17 +15,24 @@
 		2899E5220DE3E06400AC0155 /* BullshitIpadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* BullshitIpadViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* BullshitIpadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* BullshitIpadViewController.m */; };
+		8C84873713C8B89E003FEBAA /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C84873613C8B89E003FEBAA /* GTMIPhoneUnitTestMain.m */; };
+		8C84873A13C8B8D9003FEBAA /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C84873913C8B8D9003FEBAA /* GTMIPhoneUnitTestDelegate.m */; };
+		8C84873F13C8B910003FEBAA /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C84873C13C8B910003FEBAA /* GTMSenTestCase.m */; };
+		8C84874013C8B910003FEBAA /* GTMUnitTestDevLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C84873E13C8B910003FEBAA /* GTMUnitTestDevLog.m */; };
+		8C84874513C8B93E003FEBAA /* GTMObjC2Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C84874213C8B93E003FEBAA /* GTMObjC2Runtime.m */; };
+		8C84874613C8B93E003FEBAA /* GTMPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C84874413C8B93E003FEBAA /* GTMPath.m */; };
+		8C84876713C8BB30003FEBAA /* GTMRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C84876613C8BB30003FEBAA /* GTMRegex.m */; };
+		8C84876F13C8BC13003FEBAA /* BullshitMapTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A39C913BF5CC1005AA287 /* BullshitMapTest.m */; };
+		8C84877313C8BC44003FEBAA /* BullshitMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A377F13BF2F9B005AA287 /* BullshitMap.m */; };
 		8C85A8F113607F9F00C59F9C /* BullshitMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C85A8F013607F9F00C59F9C /* BullshitMapView.m */; };
 		8C88007213BE51DD00D9491B /* about_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C88006F13BE51DD00D9491B /* about_screen.png */; };
 		8C88007313BE51DD00D9491B /* bullshit_splash_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C88007013BE51DD00D9491B /* bullshit_splash_screen.png */; };
 		8C88007413BE51DD00D9491B /* main_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C88007113BE51DD00D9491B /* main_screen.png */; };
 		8C8A378013BF2F9B005AA287 /* BullshitMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A377F13BF2F9B005AA287 /* BullshitMap.m */; };
-		8C8A39CA13BF5CC1005AA287 /* BullshitMapTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A39C913BF5CC1005AA287 /* BullshitMapTest.m */; };
-		8C8A39E413BF5FB5005AA287 /* BullshitMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A377F13BF2F9B005AA287 /* BullshitMap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8C85CC8313BFA0B600031550 /* PBXContainerItemProxy */ = {
+		8C8487FB13C8C361003FEBAA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
@@ -51,18 +58,41 @@
 		401BE59313BEFC8B009A5C89 /* BullshitIpadTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BullshitIpadTest-Info.plist"; sourceTree = "<group>"; };
 		401BE59513BEFC8B009A5C89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		401BE59713BEFC8B009A5C89 /* BullshitIpadTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BullshitIpadTest-Prefix.pch"; sourceTree = "<group>"; };
+		8C83315813C8919700C58DEB /* UnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTest-Info.plist"; sourceTree = "<group>"; };
+		8C83319D13C8951800C58DEB /* UnitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C84873613C8B89E003FEBAA /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMIPhoneUnitTestMain.m; path = "google-toolbox-for-mac-read-only/UnitTesting/GTMIPhoneUnitTestMain.m"; sourceTree = "<group>"; };
+		8C84873813C8B8D9003FEBAA /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMIPhoneUnitTestDelegate.h; path = "google-toolbox-for-mac-read-only/UnitTesting/GTMIPhoneUnitTestDelegate.h"; sourceTree = "<group>"; };
+		8C84873913C8B8D9003FEBAA /* GTMIPhoneUnitTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMIPhoneUnitTestDelegate.m; path = "google-toolbox-for-mac-read-only/UnitTesting/GTMIPhoneUnitTestDelegate.m"; sourceTree = "<group>"; };
+		8C84873B13C8B910003FEBAA /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMSenTestCase.h; path = "google-toolbox-for-mac-read-only/UnitTesting/GTMSenTestCase.h"; sourceTree = "<group>"; };
+		8C84873C13C8B910003FEBAA /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMSenTestCase.m; path = "google-toolbox-for-mac-read-only/UnitTesting/GTMSenTestCase.m"; sourceTree = "<group>"; };
+		8C84873D13C8B910003FEBAA /* GTMUnitTestDevLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMUnitTestDevLog.h; path = "google-toolbox-for-mac-read-only/UnitTesting/GTMUnitTestDevLog.h"; sourceTree = "<group>"; };
+		8C84873E13C8B910003FEBAA /* GTMUnitTestDevLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMUnitTestDevLog.m; path = "google-toolbox-for-mac-read-only/UnitTesting/GTMUnitTestDevLog.m"; sourceTree = "<group>"; };
+		8C84874113C8B93E003FEBAA /* GTMObjC2Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMObjC2Runtime.h; path = "google-toolbox-for-mac-read-only/Foundation/GTMObjC2Runtime.h"; sourceTree = "<group>"; };
+		8C84874213C8B93E003FEBAA /* GTMObjC2Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMObjC2Runtime.m; path = "google-toolbox-for-mac-read-only/Foundation/GTMObjC2Runtime.m"; sourceTree = "<group>"; };
+		8C84874313C8B93E003FEBAA /* GTMPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMPath.h; path = "google-toolbox-for-mac-read-only/Foundation/GTMPath.h"; sourceTree = "<group>"; };
+		8C84874413C8B93E003FEBAA /* GTMPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMPath.m; path = "google-toolbox-for-mac-read-only/Foundation/GTMPath.m"; sourceTree = "<group>"; };
+		8C84874713C8B953003FEBAA /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMDefines.h; path = "google-toolbox-for-mac-read-only/GTMDefines.h"; sourceTree = "<group>"; };
+		8C84876513C8BB30003FEBAA /* GTMRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMRegex.h; path = "google-toolbox-for-mac-read-only/Foundation/GTMRegex.h"; sourceTree = "<group>"; };
+		8C84876613C8BB30003FEBAA /* GTMRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMRegex.m; path = "google-toolbox-for-mac-read-only/Foundation/GTMRegex.m"; sourceTree = "<group>"; };
 		8C85A8EF13607F9F00C59F9C /* BullshitMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BullshitMapView.h; sourceTree = "<group>"; };
 		8C85A8F013607F9F00C59F9C /* BullshitMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BullshitMapView.m; sourceTree = "<group>"; };
 		8C88006F13BE51DD00D9491B /* about_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_screen.png; sourceTree = "<group>"; };
 		8C88007013BE51DD00D9491B /* bullshit_splash_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullshit_splash_screen.png; sourceTree = "<group>"; };
 		8C88007113BE51DD00D9491B /* main_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_screen.png; sourceTree = "<group>"; };
+		8C8A004613C8859700FEE999 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		8C8A004713C8859700FEE999 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		8C8A004813C8859700FEE999 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		8C8A004913C8859700FEE999 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		8C8A004A13C8859700FEE999 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		8C8A004B13C8859700FEE999 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		8C8A004C13C8859700FEE999 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		8C8A377E13BF2F9B005AA287 /* BullshitMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BullshitMap.h; sourceTree = "<group>"; };
 		8C8A377F13BF2F9B005AA287 /* BullshitMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BullshitMap.m; sourceTree = "<group>"; };
-		8C8A37B713BF3707005AA287 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
-		8C8A39C013BF5BE4005AA287 /* LogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8A39C113BF5BE4005AA287 /* LogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogicTests-Info.plist"; sourceTree = "<group>"; };
 		8C8A39C813BF5CC1005AA287 /* BullshitMapTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BullshitMapTest.h; sourceTree = "<group>"; };
 		8C8A39C913BF5CC1005AA287 /* BullshitMapTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BullshitMapTest.m; sourceTree = "<group>"; };
+		8C8D99B713C0491C000149FB /* GameEngineTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEngineTest.h; sourceTree = "<group>"; };
+		8C8D99B813C0491C000149FB /* GameEngineTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameEngineTest.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* BullshitIpad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BullshitIpad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +107,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C8A39BD13BF5BE4005AA287 /* Frameworks */ = {
+		8C83319B13C8951800C58DEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -90,6 +120,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8C8A004213C8859700FEE999 /* Lib */,
 				1D3623240D0F684500981E51 /* BullshitIpadAppDelegate.h */,
 				1D3623250D0F684500981E51 /* BullshitIpadAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* BullshitIpadViewController.h */,
@@ -99,7 +130,6 @@
 				401BE58713BEF864009A5C89 /* PointHandlerDelegate.h */,
 				8C8A377E13BF2F9B005AA287 /* BullshitMap.h */,
 				8C8A377F13BF2F9B005AA287 /* BullshitMap.m */,
-				8C8A37B713BF3707005AA287 /* Cell.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -107,8 +137,8 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8C8A39C013BF5BE4005AA287 /* LogicTests.octest */,
 				1D6058910D05DD3D006BFB54 /* BullshitIpad.app */,
+				8C83319D13C8951800C58DEB /* UnitTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +153,7 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				8C8A39C113BF5BE4005AA287 /* LogicTests-Info.plist */,
+				8C83315813C8919700C58DEB /* UnitTest-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -163,6 +194,8 @@
 				401BE59213BEFC8B009A5C89 /* Supporting Files */,
 				8C8A39C813BF5CC1005AA287 /* BullshitMapTest.h */,
 				8C8A39C913BF5CC1005AA287 /* BullshitMapTest.m */,
+				8C8D99B713C0491C000149FB /* GameEngineTest.h */,
+				8C8D99B813C0491C000149FB /* GameEngineTest.m */,
 			);
 			path = BullshitIpadTest;
 			sourceTree = "<group>";
@@ -175,6 +208,58 @@
 				401BE59713BEFC8B009A5C89 /* BullshitIpadTest-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C8A004213C8859700FEE999 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				8C84876513C8BB30003FEBAA /* GTMRegex.h */,
+				8C84876613C8BB30003FEBAA /* GTMRegex.m */,
+				8C84874713C8B953003FEBAA /* GTMDefines.h */,
+				8C84874113C8B93E003FEBAA /* GTMObjC2Runtime.h */,
+				8C84874213C8B93E003FEBAA /* GTMObjC2Runtime.m */,
+				8C84874313C8B93E003FEBAA /* GTMPath.h */,
+				8C84874413C8B93E003FEBAA /* GTMPath.m */,
+				8C84873B13C8B910003FEBAA /* GTMSenTestCase.h */,
+				8C84873C13C8B910003FEBAA /* GTMSenTestCase.m */,
+				8C84873D13C8B910003FEBAA /* GTMUnitTestDevLog.h */,
+				8C84873E13C8B910003FEBAA /* GTMUnitTestDevLog.m */,
+				8C84873813C8B8D9003FEBAA /* GTMIPhoneUnitTestDelegate.h */,
+				8C84873913C8B8D9003FEBAA /* GTMIPhoneUnitTestDelegate.m */,
+				8C84873613C8B89E003FEBAA /* GTMIPhoneUnitTestMain.m */,
+				8C8A004313C8859700FEE999 /* OCMock */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		8C8A004313C8859700FEE999 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				8C8A004413C8859700FEE999 /* Headers */,
+				8C8A004C13C8859700FEE999 /* libOCMock.a */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		8C8A004413C8859700FEE999 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				8C8A004513C8859700FEE999 /* OCMock */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		8C8A004513C8859700FEE999 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				8C8A004613C8859700FEE999 /* NSNotificationCenter+OCMAdditions.h */,
+				8C8A004713C8859700FEE999 /* OCMArg.h */,
+				8C8A004813C8859700FEE999 /* OCMConstraint.h */,
+				8C8A004913C8859700FEE999 /* OCMock.h */,
+				8C8A004A13C8859700FEE999 /* OCMockObject.h */,
+				8C8A004B13C8859700FEE999 /* OCMockRecorder.h */,
+			);
+			path = OCMock;
 			sourceTree = "<group>";
 		};
 		8C8C938713BA485B0011DF38 /* images */ = {
@@ -207,25 +292,25 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* BullshitIpad.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8C8A39BF13BF5BE4005AA287 /* LogicTests */ = {
+		8C83319C13C8951800C58DEB /* UnitTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8C8A39C413BF5BE6005AA287 /* Build configuration list for PBXNativeTarget "LogicTests" */;
+			buildConfigurationList = 8C8331A413C8953700C58DEB /* Build configuration list for PBXNativeTarget "UnitTest" */;
 			buildPhases = (
-				8C8A39BB13BF5BE4005AA287 /* Resources */,
-				8C8A39BC13BF5BE4005AA287 /* Sources */,
-				8C8A39BD13BF5BE4005AA287 /* Frameworks */,
-				8C8A39BE13BF5BE4005AA287 /* ShellScript */,
-				8C85CC7113BFA03800031550 /* ShellScript */,
+				8C83319913C8951800C58DEB /* Resources */,
+				8C83319A13C8951800C58DEB /* Sources */,
+				8C83319B13C8951800C58DEB /* Frameworks */,
+				8C84872013C8B70E003FEBAA /* ShellScript */,
+				8C84874E13C8B9B0003FEBAA /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8C85CC8413BFA0B600031550 /* PBXTargetDependency */,
+				8C8487FC13C8C361003FEBAA /* PBXTargetDependency */,
 			);
-			name = LogicTests;
-			productName = LogicTests;
-			productReference = 8C8A39C013BF5BE4005AA287 /* LogicTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			name = UnitTest;
+			productName = UnitTest;
+			productReference = 8C83319D13C8951800C58DEB /* UnitTest.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -248,7 +333,7 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* BullshitIpad */,
-				8C8A39BF13BF5BE4005AA287 /* LogicTests */,
+				8C83319C13C8951800C58DEB /* UnitTest */,
 			);
 		};
 /* End PBXProject section */
@@ -266,7 +351,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C8A39BB13BF5BE4005AA287 /* Resources */ = {
+		8C83319913C8951800C58DEB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -276,7 +361,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8C85CC7113BFA03800031550 /* ShellScript */ = {
+		8C84872013C8B70E003FEBAA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -287,11 +372,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\" 1> /dev/null\n";
+			shellScript = "";
 		};
-		8C8A39BE13BF5BE4005AA287 /* ShellScript */ = {
+		8C84874E13C8B9B0003FEBAA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -300,7 +385,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			shellScript = "\"Classes/Lib/google-toolbox-for-mac-read-only/UnitTesting/RunIPhoneUnitTest.sh\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -317,22 +402,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C8A39BC13BF5BE4005AA287 /* Sources */ = {
+		8C83319A13C8951800C58DEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C8A39CA13BF5CC1005AA287 /* BullshitMapTest.m in Sources */,
-				8C8A39E413BF5FB5005AA287 /* BullshitMap.m in Sources */,
+				8C84873713C8B89E003FEBAA /* GTMIPhoneUnitTestMain.m in Sources */,
+				8C84873A13C8B8D9003FEBAA /* GTMIPhoneUnitTestDelegate.m in Sources */,
+				8C84873F13C8B910003FEBAA /* GTMSenTestCase.m in Sources */,
+				8C84874013C8B910003FEBAA /* GTMUnitTestDevLog.m in Sources */,
+				8C84874513C8B93E003FEBAA /* GTMObjC2Runtime.m in Sources */,
+				8C84874613C8B93E003FEBAA /* GTMPath.m in Sources */,
+				8C84876713C8BB30003FEBAA /* GTMRegex.m in Sources */,
+				8C84876F13C8BC13003FEBAA /* BullshitMapTest.m in Sources */,
+				8C84877313C8BC44003FEBAA /* BullshitMap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8C85CC8413BFA0B600031550 /* PBXTargetDependency */ = {
+		8C8487FC13C8C361003FEBAA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1D6058900D05DD3D006BFB54 /* BullshitIpad */;
-			targetProxy = 8C85CC8313BFA0B600031550 /* PBXContainerItemProxy */;
+			targetProxy = 8C8487FB13C8C361003FEBAA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -367,70 +459,76 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = BullshitIpad_Prefix.pch;
 				INFOPLIST_FILE = "BullshitIpad-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lgcov",
+				);
 				PRODUCT_NAME = BullshitIpad;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		8C8A39C213BF5BE6005AA287 /* Debug */ = {
+		8C83319F13C8951800C58DEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes/Lib\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				INFOPLIST_FILE = "LogicTests-Info.plist";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = "UnitTest-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
 					"-framework",
-					SenTestingKit,
-					"-framework",
 					UIKit,
 				);
 				PREBINDING = NO;
-				PRODUCT_NAME = LogicTests;
+				PRODUCT_NAME = UnitTest;
 				SDKROOT = iphoneos;
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
-		8C8A39C313BF5BE6005AA287 /* Release */ = {
+		8C8331A013C8951800C58DEB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes/Lib\"",
 				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				INFOPLIST_FILE = "LogicTests-Info.plist";
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = "UnitTest-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
 					"-framework",
-					SenTestingKit,
-					"-framework",
 					UIKit,
+					"-lgcov",
 				);
 				PREBINDING = NO;
-				PRODUCT_NAME = LogicTests;
+				PRODUCT_NAME = UnitTest;
 				SDKROOT = iphoneos;
-				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -457,7 +555,17 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Classes/Lib/OCMock/Headers/**";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/Classes/Lib/OCMock\"/**",
+				);
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"$(PROJECT_DIR)/Classes/Lib/OCMock/libOCMock.a",
+				);
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -476,11 +584,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8C8A39C413BF5BE6005AA287 /* Build configuration list for PBXNativeTarget "LogicTests" */ = {
+		8C8331A413C8953700C58DEB /* Build configuration list for PBXNativeTarget "UnitTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8C8A39C213BF5BE6005AA287 /* Debug */,
-				8C8A39C313BF5BE6005AA287 /* Release */,
+				8C83319F13C8951800C58DEB /* Debug */,
+				8C8331A013C8951800C58DEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

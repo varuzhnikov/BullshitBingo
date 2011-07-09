@@ -17,7 +17,7 @@ int const MAP_SIZE = 5;
 	self = [super init];
 	
 	if (self) {
-		cells = (bool**)malloc(MAP_SIZE * sizeof(bool));
+		cells = (bool**)malloc(MAP_SIZE * sizeof(bool*));
 		for (int i = 0; i < MAP_SIZE; i++) {
 			cells[i] = (bool*)malloc(MAP_SIZE * sizeof(bool));
 		}

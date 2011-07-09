@@ -15,6 +15,7 @@
 	Cell someCell = {0,4};
 	STAssertFalse([bullshitMap isExpunged:someCell], @"should't be expunged");
 	[bullshitMap release];
+	STAssertTrue(YES, @"true");
 }
 
 -(void) testExpungeCell {
@@ -39,15 +40,15 @@
 	-----------
 	|0|0|0|0|0|4
 	-----------
- */
--(void) testFirstRowBullshit {
-	BullshitMap *bullshitMap = [[BullshitMap alloc] init];
+*/
+-(void)testFirstRowBullshit {
+	BullshitMap *bullshitMap2 = [[BullshitMap alloc] init];
 	for (int j = 0; j < MAP_SIZE; j++) {
 		Cell cell = {0, j};
-		[bullshitMap expunge:cell];	
+		[bullshitMap2 expunge:cell];	
 	}
-	STAssertTrue([bullshitMap isBullshit], @"Should be bullshit");
-	[bullshitMap release];
+	STAssertTrue([bullshitMap2 isBullshit], @"Should be bullshit");
+	[bullshitMap2 release];
 }
 
 /**
@@ -65,7 +66,7 @@
  |0|0|0|0|0|4
  -----------
  */
--(void) testFirstRowIsNotBullshit {
+-(void) testAFirstRowIsNotBullshit {
 	BullshitMap *bullshitMap = [[BullshitMap alloc] init];
 	for (int j = 0; j < 4; j++) {
 		Cell cell = {0, j};
